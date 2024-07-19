@@ -203,3 +203,39 @@
 - [ ] "abcdef"
 - [ ] "abcd4321"
 - [ ] "a1a1b2"
+
+#### Q13. Output of the code:
+
+    ```
+       int[,] matrix = new int[,] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int sum = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++) {
+            int product = matrix[i, 0];
+        for (int j = 1; j < matrix.GetLength(1); j++) {
+            product *= matrix[i, j];
+        }
+        sum += product;
+        }
+        Console.WriteLine(sum);
+    ```
+- [x] 126
+
+
+#### Q14. Output of the code after the function call: Java
+
+    ```
+     function f(x) {
+    x = "x-" + x;
+    return function(y) {
+        y = "y-" + y + x;
+        return function(z) {
+            return "z-" + z + y;
+        }
+    }
+    }
+
+        let g = f("a")("b")("c");
+    console.log(g);
+
+    ```
+- [x] z-y-x-a
